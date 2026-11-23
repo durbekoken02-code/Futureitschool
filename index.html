@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futureitschool - Kelajak kasblarini biz bilan o'rganing!</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <span class="logo__icon">⚡</span>
+        <span>Future<span class="highlight">itschool</span></span>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Bosh sahifa</a></li>
+          <li class="nav__item"><a href="#courses" class="nav__link">Kurslar</a></li>
+          <li class="nav__item"><a href="#advantages" class="nav__link">Afzalliklar</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Aloqa</a></li>
+        </ul>
+        <button class="btn btn--header" id="openModalBtn">Ro'yxatdan o'tish</button>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="home">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <span class="badge">🚀 O'z kelajagingni bugun yarat!</span>
+          <h1 class="hero__title">
+            Kelajak kasblarini <br>
+            <span class="gradient-text">Futureitschool</span> bilan o'rganing
+          </h1>
+          <p class="hero__description">
+            Biz sizga noldan boshlab IT mutaxassisi bo'lishga, real loyihalar ustida ishlashga va nufuzli kompaniyalarda yuqori maoshli ish topishingizga yordam beramiz.
+          </p>
+          <div class="hero__buttons">
+            <button class="btn btn--primary open-reg-modal" data-course="Umumiy maslahat">Kursga yozilish</button>
+            <a href="#courses" class="btn btn--outline">Kurslarni ko'rish</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat__item">
+              <h3 class="stat__number">1,500+</h3>
+              <p class="stat__text">Bitiruvchilar</p>
+            </div>
+            <div class="stat__divider"></div>
+            <div class="stat__item">
+              <h3 class="stat__number">90%</h3>
+              <p class="stat__text">Ishga joylashish</p>
+            </div>
+            <div class="stat__divider"></div>
+            <div class="stat__item">
+              <h3 class="stat__number">15+</h3>
+              <p class="stat__text">Tajribali mentorlar</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__image-wrapper">
+          <div class="hero__blob"></div>
+          <div class="hero__card">
+            <div class="code-box">
+              <div class="code-header">
+                <span class="dot dot--red"></span>
+                <span class="dot dot--yellow"></span>
+                <span class="dot dot--green"></span>
+                <span class="code-title">FutureIT.js</span>
+              </div>
+              <pre class="code-content"><code><span class="token-keyword">const</span> student = {
+  name: <span class="token-string">"Kelajak dasturchisi"</span>,
+  school: <span class="token-string">"Futureitschool"</span>,
+  skills: [<span class="token-string">"Frontend"</span>, <span class="token-string">"Backend"</span>],
+  future: <span class="token-string">"Junior to Senior"</span>
+};
+
+<span class="token-function">student.achieveSuccess</span>();</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KURSLAR BO'LIMI ================= -->
+    <section class="courses section" id="courses">
+      <div class="container">
+        <div class="section__header">
+          <span class="badge">Yo'nalishlar</span>
+          <h2 class="section__title">Bizning mashhur IT kurslarimiz</h2>
+          <p class="section__subtitle">O'zingizga mos sohani tanlang va 0 dan professional darajagacha yeting</p>
+        </div>
+
+        <div class="courses__grid">
+          <!-- Kurs 1 -->
+          <div class="course-card">
+            <div class="course-card__badge">Eng ommabop</div>
+            <div class="course-card__icon">💻</div>
+            <h3 class="course-card__title">Frontend Dasturlash</h3>
+            <p class="course-card__desc">HTML5, CSS3, JavaScript, React va zamonaviy veb-saytlar yaratish texnologiyalari.</p>
+            <ul class="course-card__features">
+              <li>⏱ Davomiyligi: 6 oy</li>
+              <li>⚡ Haftada 3 kun, 2 soatdan</li>
+              <li>🏆 Sertifikat va portfolio</li>
+            </ul>
+            <div class="course-card__footer">
+              <button class="btn btn--course open-reg-modal" data-course="Frontend Dasturlash">Yozilish</button>
+            </div>
+          </div>
+
+          <!-- Kurs 2 -->
+          <div class="course-card">
+            <div class="course-card__icon">⚙️</div>
+            <h3 class="course-card__title">Backend (Python / Django)</h3>
+            <p class="course-card__desc">Serverlar, ma'lumotlar bazasi, API yaratish, Telegram botlar va xavfsiz tizimlar.</p>
+            <ul class="course-card__features">
+              <li>⏱ Davomiyligi: 7 oy</li>
+              <li>⚡ Haftada 3 kun, 2 soatdan</li>
+              <li>🏆 Real loyihalar va amaliyot</li>
+            </ul>
+            <div class="course-card__footer">
+              <button class="btn btn--course open-reg-modal" data-course="Backend (Python)">Yozilish</button>
+            </div>
+          </div>
+
+          <!-- Kurs 3 -->
+          <div class="course-card">
+            <div class="course-card__icon">🎨</div>
+            <h3 class="course-card__title">Grafik Dizayn & UI/UX</h3>
+            <p class="course-card__desc">Figma, Photoshop, Illustrator, mobil ilova va saytlar dizayni, brending asoslari.</p>
+            <ul class="course-card__features">
+              <li>⏱ Davomiyligi: 5 oy</li>
+              <li>⚡ Haftada 3 kun, 2 soatdan</li>
+              <li>🏆 Tayyor portfolio bilan bitirish</li>
+            </ul>
+            <div class="course-card__footer">
+              <button class="btn btn--course open-reg-modal" data-course="Grafik Dizayn & UI/UX">Yozilish</button>
+            </div>
+          </div>
+
+          <!-- Kurs 4 -->
+          <div class="course-card">
+            <div class="course-card__icon">📱</div>
+            <h3 class="course-card__title">Android & Flutter</h3>
+            <p class="course-card__desc">iOS va Android uchun zamonaviy kross-platformali mobil ilovalar yaratish.</p>
+            <ul class="course-card__features">
+              <li>⏱ Davomiyligi: 6 oy</li>
+              <li>⚡ Haftada 3 kun, 2 soatdan</li>
+              <li>🏆 Google Play ga ilova yuklash</li>
+            </ul>
+            <div class="course-card__footer">
+              <button class="btn btn--course open-reg-modal" data-course="Android & Flutter">Yozilish</button>
+            </div>
+          </div>
+
+          <!-- Kurs 5 -->
+          <div class="course-card">
+            <div class="course-card__icon">🛡️</div>
+            <h3 class="course-card__title">Kiberxavfsizlik</h3>
+            <p class="course-card__desc">Tarmoq xavfsizligi, axborotni himoyalash, zaifliklarni aniqlash va testlash.</p>
+            <ul class="course-card__features">
+              <li>⏱ Davomiyligi: 8 oy</li>
+              <li>⚡ Haftada 3 kun, 2 soatdan</li>
+              <li>🏆 Maxsus xalqaro sertifikat</li>
+            </ul>
+            <div class="course-card__footer">
+              <button class="btn btn--course open-reg-modal" data-course="Kiberxavfsizlik">Yozilish</button>
+            </div>
+          </div>
+
+          <!-- Kurs 6 -->
+          <div class="course-card">
+            <div class="course-card__icon">👶</div>
+            <h3 class="course-card__title">IT Foundation (Bolalar uchun)</h3>
+            <p class="course-card__desc">Kompyuter savodxonligi, mantiqiy fikrlash, Scratch va dasturlashga dastlabki qadam.</p>
+            <ul class="course-card__features">
+              <li>⏱ Davomiyligi: 3 oy</li>
+              <li>⚡ Haftada 3 kun, 1.5 soatdan</li>
+              <li>🏆 Qiziqarli o'yin loyihalari</li>
+            </ul>
+            <div class="course-card__footer">
+              <button class="btn btn--course open-reg-modal" data-course="IT Foundation">Yozilish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AFZALLIKLAR ================= -->
+    <section class="advantages section" id="advantages">
+      <div class="container">
+        <div class="section__header">
+          <span class="badge">Nega biz?</span>
+          <h2 class="section__title">Futureitschool afzalliklari</h2>
+          <p class="section__subtitle">Biz bilan ta'lim olishingiz uchun eng muhim imtiyozlar</p>
+        </div>
+
+        <div class="advantages__grid">
+          <div class="advantage-card">
+            <div class="advantage-card__icon">👨‍🏫</div>
+            <h3>Katta tajribaga ega ustozlar</h3>
+            <p>Darslarni xalqaro va mahalliy yirik IT kompaniyalarda ishlaydigan amaliyotchi mentorlar o'tadi.</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-card__icon">💼</div>
+            <h3>Ishga joylashishda ko'mak</h3>
+            <p>Bitiruvchilarimizga rezyume tayyorlash, intervyulardan o'tish va ish topishda to'liq ko'maklashamiz.</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-card__icon">🏢</div>
+            <h3>Zamonaviy Coworking & WiFi</h3>
+            <p>O'quvchilarimiz darsdan tashqari vaqtda ham markazimizda bemalol kelib mustaqil ishlashlari mumkin.</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-card__icon">📁</div>
+            <h3>Portfolio & Real loyihalar</h3>
+            <p>Nazariya bilan cheklanmay, kurs davomida portfolio uchun 5 dan ortiq real loyiha qilasiz.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TO'G'RIDAN-TO'G'RI FORMA (SECTION) ================= -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="contact__info">
+            <span class="badge">Bepul maslahat</span>
+            <h2 class="contact__title">Savollaringiz bormi? <br>Biz sizga qo'ng'iroq qilamiz!</h2>
+            <p class="contact__desc">
+              O'z ma'lumotlaringizni qoldiring, mutaxassisimiz 15 daqiqa ichida siz bilan bog'lanadi va bepul ochiq darsga yozib qo'yadi.
+            </p>
+            <div class="contact__meta">
+              <div class="meta-item">
+                <span class="meta-icon">📍</span>
+                <div>
+                  <strong>Manzil:</strong>
+                  <p>Toshkent shahri, IT Park binosi</p>
+                </div>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">📞</span>
+                <div>
+                  <strong>Telefon:</strong>
+                  <p>+998 (90) 123-45-67</p>
+                </div>
+              </div>
+              <div class="meta-item">
+                <span class="meta-icon">💬</span>
+                <div>
+                  <strong>Telegram bot:</strong>
+                  <p>Ma'lumotlar to'g'ridan-to'g'ri kanalga tushadi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form-card">
+            <h3 class="form-card__title">Ro'yxatdan o'tish</h3>
+            <form id="inlineRegisterForm" class="form">
+              <div class="form-group">
+                <label for="inlineName">To'liq ismingiz</label>
+                <input type="text" id="inlineName" name="name" placeholder="Masalan: Sardor Aliyev" required>
+              </div>
+
+              <div class="form-group">
+                <label for="inlinePhone">Telefon raqamingiz</label>
+                <input type="tel" id="inlinePhone" name="phone" placeholder="+998 90 123 45 67" required>
+              </div>
+
+              <div class="form-group">
+                <label for="inlineCourse">Qaysi kurs qiziqtirmoqda?</label>
+                <select id="inlineCourse" name="course" required>
+                  <option value="" disabled selected>Kursni tanlang</option>
+                  <option value="Frontend Dasturlash">Frontend Dasturlash</option>
+                  <option value="Backend (Python)">Backend (Python)</option>
+                  <option value="Grafik Dizayn & UI/UX">Grafik Dizayn & UI/UX</option>
+                  <option value="Android & Flutter">Android & Flutter</option>
+                  <option value="Kiberxavfsizlik">Kiberxavfsizlik</option>
+                  <option value="IT Foundation">IT Foundation</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="inlineMessage">Qo'shimcha savol yoki izoh (ixtiyoriy)</label>
+                <textarea id="inlineMessage" name="message" rows="3" placeholder="Masalan: Kechki guruhlar bormi?"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--submit" id="inlineSubmitBtn">
+                <span class="btn-text">Yuborish</span>
+                <span class="btn-spinner" style="display: none;"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= POPUP MODAL (REGISTRATSIYA OYNASI) ================= -->
+  <div class="modal" id="registerModal">
+    <div class="modal__overlay" id="modalOverlay"></div>
+    <div class="modal__box">
+      <button class="modal__close" id="modalCloseBtn">&times;</button>
+      
+      <div class="modal__header">
+        <span class="badge">Futureitschool</span>
+        <h3 class="modal__title">Kursga ro'yxatdan o'tish</h3>
+        <p class="modal__desc">Ma'lumotlaringizni to'ldiring, menejerlarimiz tez orada siz bilan bog'lanishadi.</p>
+      </div>
+
+      <form id="modalRegisterForm" class="form">
+        <div class="form-group">
+          <label for="modalName">Ism va familiyangiz</label>
+          <input type="text" id="modalName" name="name" placeholder="Ismingizni kiriting" required>
+        </div>
+
+        <div class="form-group">
+          <label for="modalPhone">Telefon raqamingiz</label>
+          <input type="tel" id="modalPhone" name="phone" placeholder="+998 (__) ___-__-__" required>
+        </div>
+
+        <div class="form-group">
+          <label for="modalCourse">Tanlangan kurs</label>
+          <select id="modalCourse" name="course" required>
+            <option value="Frontend Dasturlash">Frontend Dasturlash</option>
+            <option value="Backend (Python)">Backend (Python)</option>
+            <option value="Grafik Dizayn & UI/UX">Grafik Dizayn & UI/UX</option>
+            <option value="Android & Flutter">Android & Flutter</option>
+            <option value="Kiberxavfsizlik">Kiberxavfsizlik</option>
+            <option value="IT Foundation">IT Foundation</option>
+            <option value="Umumiy maslahat">Umumiy maslahat / Bilmayman</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="modalNote">Izoh (ixtiyoriy)</label>
+          <textarea id="modalNote" name="message" rows="2" placeholder="Qulay dars vaqti yoki savolingiz..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--submit" id="modalSubmitBtn">
+          <span class="btn-text">Ro'yxatdan o'tish</span>
+          <span class="btn-spinner" style="display: none;"></span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= XABAR / TOAST NOTIFICATION ================= -->
+  <div class="toast" id="toast">
+    <div class="toast__icon" id="toastIcon">✅</div>
+    <div class="toast__text" id="toastText">Ma'lumotingiz muvaffaqiyatli yuborildi!</div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">
+          <span class="logo__icon">⚡</span>
+          <span>Future<span class="highlight">itschool</span></span>
+        </a>
+        <p>Kelajakning yetakchi IT mutaxassislarini tayyorlovchi zamonaviy ta'lim markazi.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Tezkor havolalar</h4>
+        <ul>
+          <li><a href="#home">Bosh sahifa</a></li>
+          <li><a href="#courses">Kurslar</a></li>
+          <li><a href="#advantages">Afzalliklar</a></li>
+          <li><a href="#contact">Bog'lanish</a></li>
+        </ul>
+      </div>
+      <div class="footer__socials">
+        <h4>Ijtimoiy tarmoqlar</h4>
+        <div class="social-icons">
+          <a href="#" class="social-link" title="Telegram">✈️ Telegram</a>
+          <a href="#" class="social-link" title="Instagram">📸 Instagram</a>
+          <a href="#" class="social-link" title="YouTube">▶️ YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Futureitschool. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
